@@ -1,0 +1,97 @@
+<nav class="navbar-center navbar-light bg-dark">
+    <h1  style="text-align: center; color: white; font-family: 'Times New Roman', Times, serif;">Book Your Movies</h1>
+    <!-- <span class="navbar-brand  h1">Book Your Movies</span> -->
+</nav>
+
+<br>
+<div class="container">
+
+  <!-- <div class="register">
+    <button class=" btn btn-primary btn-lg btn-block" type="button" (click)="clickCard()">Register </button><br>
+    <app-register *ngIf="showRegister"></app-register>
+  </div> -->
+  
+  <div class="col-sm-4">
+    <div class="card" style="float: left; display: inline;">
+      <div class="card-body" >
+        <button class=" btn btn-primary btn-lg btn-block" type="button" (click)="clickCard()">Register</button><br>
+        <app-register *ngIf="showRegister" (onSubmitting)="onSubmittingDone()"></app-register>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <div class="row">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <img src="../assets/image/black panther.jpeg" class="img-fluid" alt="Responsive image">
+            <h5 class="card-title">Black Panther</h5>
+            <p>Date: 11/26/2021</p>
+            <!-- <app-register (onSubmitting)="onSubmittingDone()"></app-register> -->
+            <!-- <input *ngIf="temp" type="button" (click)="Book()" value="Book"> -->
+            <button class=" btn btn-primary btn-lg btn-block" *ngIf="temp" type="button" (click)="Book()">Book</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <img src="../assets/image/nun.jpg" class="img-fluid" alt="Responsive image">
+            <h5 class="card-title">The Nun</h5>
+            <p>Date: 11/27/2021</p>
+            <button class=" btn btn-primary btn-lg btn-block" *ngIf="temp" type="button" (click)="Book()" >Book</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <img src="../assets/image/sherloc holms.jpg" class="img-fluid" alt="Responsive image">
+            <h5 class="card-title">Sherlock Holmes</h5>
+            <p>Date: 11/27/2021</p>
+            <button class=" btn btn-primary btn-lg btn-block" *ngIf="temp" type="button" (click)="Book()" >Book</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <img src="../assets/image/definately may be.jpg" class="img-fluid" alt="Responsive image">
+            <h5 class="card-title">Definately May Be</h5>
+            <p>Date: 11/29/2021</p>
+            <button class=" btn btn-primary btn-lg btn-block" *ngIf="temp" type="button" (click)="Book()" >Book</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <img src="../assets/image/thyor.jpg" class="img-fluid" alt="Responsive image">
+            <h5 class="card-title">Thor</h5>
+            <p>Date: 11/30/2021</p>
+            <button class=" btn btn-primary btn-lg btn-block" *ngIf="temp" type="button" (click)="Book()" >Book</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <img src="../assets/image/shershah.jpg" class="img-fluid" alt="Responsive image">
+            <h5 class="card-title">SherShaah</h5>
+            <p>Date: 12/01/2021</p>
+            <button class=" btn btn-primary btn-lg btn-block" *ngIf="temp" type="button" (click)="Book()" >Book</button>
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+</div>
+
+<router-outlet></router-outlet>

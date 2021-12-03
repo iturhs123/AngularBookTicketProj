@@ -1,0 +1,12 @@
+.register{
+    float: left;
+}
+.h1{
+    background-color: rgb(219, 215, 215);
+}
+
+.img-fluid{
+    height: 200px !important;
+    width: 250px !important;
+
+}
